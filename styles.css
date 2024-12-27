@@ -1,0 +1,106 @@
+/* Reset global - Remove estilos padrão do navegador
+   Aplica configurações básicas de fonte e box model */
+   * {
+    margin: 0;                /* Remove margens padrão */
+    padding: 0;               /* Remove preenchimentos padrão */
+    box-sizing: border-box;   /* Inclui padding e border na largura/altura total */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define fontes */
+}
+
+/* Configuração do corpo da página
+   Define layout básico e aparência geral */
+body {
+    max-width: 800px;          /* Largura máxima do conteúdo */
+    margin: 2rem auto;         /* Centraliza o conteúdo com margem superior/inferior */
+    padding: 2rem;             /* Espaçamento interno */
+    background-color: #f5f5f5; /* Cor de fundo suave */
+    line-height: 1.6;          /* Espaçamento entre linhas para melhor leitura */
+}
+
+/* Estilização da imagem de perfil
+   Configura aparência circular e borda */
+img {
+    border-radius: 50%;        /* Torna a imagem circular */
+    display: block;            /* Remove espaço extra abaixo */
+    margin: 0 auto 1rem;       /* Centraliza com margem inferior */
+    border: 3px solid #2c3e50; /* Borda azul escura */
+}
+
+/* Estilo do título principal (nome)
+   Define cor e alinhamento */
+h1 {
+    color: #2c3e50;           /* Cor azul escura */
+    text-align: center;       /* Centraliza o texto */
+    margin-bottom: 1rem;      /* Espaço inferior */
+}
+
+/* Estilo dos títulos de seção
+   Adiciona linha decorativa inferior */
+h2 {
+    color: #34495e;           /* Cor azul média */
+    border-bottom: 2px solid #3498db; /* Linha decorativa */
+    padding-bottom: 0.5rem;   /* Espaço entre texto e linha */
+    margin: 2rem 0 1rem;      /* Margens verticais */
+}
+
+/* Estilo dos subtítulos
+   Define cor e espaçamento */
+h3 {
+    color: #2980b9;           /* Cor azul clara */
+    margin: 1.5rem 0 0.5rem;  /* Margens verticais */
+}
+
+/* Estilização dos links
+   Configura cor e efeito hover */
+a {
+    color: #3498db;           /* Cor do link */
+    text-decoration: none;     /* Remove sublinhado */
+    transition: color 0.3s;    /* Suaviza mudança de cor */
+}
+
+/* Efeito hover nos links */
+a:hover {
+    color: #2980b9;           /* Cor mais escura ao passar mouse */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Estilo das seções
+   Cria cartões com sombra */
+.section {
+    background-color: white;   /* Fundo branco */
+    padding: 1.5rem;          /* Espaçamento interno */
+    border-radius: 8px;       /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 2rem;      /* Espaço entre seções */
+}
+
+/* Layout das mídias sociais
+   Organiza links horizontalmente */
+.social-media {
+    display: flex;            /* Layout flexível */
+    gap: 1rem;               /* Espaço entre itens */
+    margin-top: 0.5rem;      /* Margem superior */
+}
+
+/* Linha divisória
+   Cria separador visual sutil */
+hr {
+    border: none;             /* Remove borda padrão */
+    border-top: 1px solid #e0e0e0; /* Linha cinza clara */
+    margin: 2rem 0;          /* Margens verticais */
+}
+
+/* Design responsivo
+   Ajusta layout para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;        /* Reduz padding */
+        margin: 1rem;         /* Reduz margem */
+    }
+    
+    img {
+        width: 80px;          /* Reduz tamanho da imagem */
+        height: auto;         /* Mantém proporção */
+    }
+}
+

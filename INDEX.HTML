@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</html>
+    <style>
+        /* Estilização da tela de loading */
+        #loading-screen {
+            position: fixed;     /* Fixa a tela de loading */
+            top: 0;             /* Posiciona no topo */
+            left: 0;            /* Posiciona à esquerda */
+            width: 100%;        /* Ocupa toda a largura */
+            height: 100%;       /* Ocupa toda a altura */
+            background: #000;    /* Fundo preto */
+            display: flex;       /* Layout flexível */
+            justify-content: center;  /* Centraliza horizontalmente */
+            align-items: center;      /* Centraliza verticalmente */
+            z-index: 9999;      /* Mantém acima de outros elementos */
+        }
+
+        /* Estilização do GIF */
+        .loading-gif {
+            width: 300px;       /* Largura do GIF */
+            height: 300px;      /* Altura do GIF */
+            object-fit: cover;   /* Ajusta o GIF mantendo proporção */
+            border-radius: 10px; /* Cantos arredondados */
+        }
+
+        /* Esconde conteúdo principal inicialmente */
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tela de loading com GIF -->
+    <div id="loading-screen">
+        <img src="imagens\60e323d31b715ba8912437b051778c32_w200.gif" alt="Loading..." class="loading-gif">
+    </div>
+
+    <!-- Container do conteúdo principal -->
+    <div id="content">
+        <!-- Conteúdo do currículo vai aqui -->
+    </div>
+
+    <script>
+        // Executa quando a página carrega
+        window.onload = function() {
+            // Aguarda 10 segundos
+            setTimeout(function() {
+                // Adiciona transição de fade out
+                document.getElementById('loading-screen').style.opacity = '0';
+                document.getElementById('loading-screen').style.transition = 'opacity 0.5s';
+                // Mostra o conteúdo principal
+                document.getElementById('content').style.display = 'block';
+                // Remove a tela de loading após a transição
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 500);
+            }, 1000);
+        };
+    </script>
+<body>
+    
+    <!--minha imagem --> 
+    <img src="imagens\1614124021594.jpg" alt="" width= 100 height="">
+    <!--Meu nome --> 
+    <strong><h1>Rafael Jangelavicen Rodrigues</strong></h1>
+    <a href="mailto:rafajangelavicen@gmail.com">Email: rafajangelavicen@gmail.coma </a>
+    Telefone: (41) 9 9243-0646<br>
+
+   <!--social midia --> 
+   <section class="section">
+    <h2>Social Media</h2>
+    <div class="social-media">
+        <button> <a href="https://www.linkedin.com/in/rafael-jangelavicen-rodrigues-012466271" target="_blank">LinkedIn</a>
+
+    </div>
+</section>
+    <!--educação --> 
+    <h2>Educação</h2>
+    Unicesumar<br>
+    Bachalerado<br>
+    Engenharia de software<br>
+    01/01/2024 - 30/12/2024
+   
+    <!--Histórico Profissional --> 
+    
+    <h2>HISTÓRICO PROFISSIONAL</h2>
+    <h3>Motorista entregador</h3>
+    Virus 41 - Curitiba - 05/2022 - 10/2023<br>
+    Transporte de mercadorias e encomendas em veículos de entrega, tomando as medidas de segurança necessárias para evitar acidentes no trajeto.
+    Carregamento e descarregamento de mercadorias de veículos de entrega, posicionando os produtos em suportes adequados para evitar quedas.
+    Planejamento de rotas de entrega, visando definir caminhos seguros que pudessem ser percorridos no menor tempo possí
+
+    <h3>Auxiliar de logística</h3>
+    Virus 41 - Curitiba - 10/2023 - 05/2024 <br>
+    Manuseio, separação e preparação do produto final para envio aos clientes, de forma a garantir a eficiência na entrega aos distribuidores.
+    Separação, conferência e paletização de mercadorias, cuidando para que os processos ocorressem em tempo hábil, visando a eficiência das operações.
+    Recebimento de produtos no depósito, realizando o cadastro dos itens no sistema da empresa para facilitar o controle dos processos de entrada e saída.
+    Apoio na realização de inventários do estoque, listando com precisão as quantidades de produtos disponíveis no depósito, contribuindo para o desenvolvimento de processos logísticos mais eficientes.
+
+    <h3>Auxiliar de estoque</h3>
+    Havan - 06/2024 – 09/2024 <br>
+    Carga e descarga, organização e limpeza do depósito, auxiliar as pessoas a pegar e guardar as mercadorias.
+
+    <h3>Conferente</h3>
+    Havan - 09/2024 a 26/12/2024 <br>
+    Ser responsável por todo o depósito, incluindo organização, notas, recebimento, auxiliares e resolver qualquer problema que tiver em relação ao depósito<hr>
+
+</body>
+</html>
+
+</body>
+</html>
